@@ -17,7 +17,7 @@ describe("TwoInchToken", () => {
     });
 
     it("Check deployment", async () => {
-        expect(await myToken.name()).to.equal(name);
+        expect(await myToken.name()).to.equal(false);
         expect(await myToken.symbol()).to.equal(symbol);
         expect(await myToken.decimals()).to.equal(18);
         expect(await myToken.cap()).to.equal(capSupply);
